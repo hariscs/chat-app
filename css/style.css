@@ -30,6 +30,10 @@ body {
 	height: 100vh;
 }
 
+p {
+	line-height: 1.4;
+}
+
 img {
 	max-width: 100%;
 }
@@ -37,11 +41,13 @@ img {
 .main {
 	display: flex;
 	flex-direction: column;
-	max-width: 450px;
+	max-width: 375px;
 	padding: 4em 0;
 }
 
 .phone {
+	max-width: 360px;
+	font-size: 0.8rem;
 	padding: 1em;
 	border: 18px solid var(--white);
 	border-radius: 40px;
@@ -51,11 +57,11 @@ img {
 
 .notch {
 	position: absolute;
-	width: 230px;
-	left: 95px;
-	top: -17px;
-	height: 49px;
-	border-radius: 0 0 25px 25px;
+	width: 180px;
+	left: 76px;
+	top: -5px;
+	height: 28px;
+	border-radius: 0 0 18px 18px;
 	background: var(--white);
 }
 
@@ -69,7 +75,7 @@ img {
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
-	margin: -17px;
+	margin: -14.5px;
 	padding: 3em 1.5em 1.3em;
 	border-radius: 30px 30px 8px 8px;
 	margin-bottom: 1em;
@@ -89,7 +95,7 @@ img {
 .profile-img {
 	border: 2px solid var(--Light-Grayish-Violet);
 	border-radius: 100vh;
-	max-width: 45px;
+	max-width: 35px;
 	margin-left: 1em;
 }
 
@@ -122,18 +128,14 @@ img {
 .msg-right {
 	background: var(--white);
 	color: var(--Very-Dark-Desaturated-Violet);
-	max-width: 28ch;
-	margin-left: 120px;
+	max-width: 30ch;
+	margin-left: 100px;
 	border-radius: 20px 20px 5px 20px;
 	text-align: left;
 }
 
 .right-sub {
-	margin-left: 210px;
-}
-
-.msg-right p {
-	margin-right: 1em;
+	margin-left: 160px;
 }
 
 .right-dogs {
@@ -149,7 +151,7 @@ img {
 }
 
 .dog-pic {
-	max-width: 70px;
+	max-width: 55px;
 	border-radius: 15px;
 }
 
