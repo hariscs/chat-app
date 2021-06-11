@@ -46,7 +46,7 @@ img {
 }
 
 .phone {
-	max-width: 360px;
+	width: 360px;
 	font-size: 0.8rem;
 	padding: 1em;
 	border: 18px solid var(--white);
