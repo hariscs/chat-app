@@ -50,6 +50,7 @@ img {
 	font-size: 0.8rem;
 	padding: 1em;
 	border: 18px solid var(--white);
+	background: var(--Light-Grayish-Violet);
 	border-radius: 40px;
 	box-shadow: 5px 13px 45px -6px rgba(0, 0, 0, 0.35);
 	position: relative;
@@ -230,4 +231,58 @@ img {
 	max-width: 30ch;
 	margin-left: auto;
 	margin-right: auto;
+}
+
+.phone::before {
+	position: absolute;
+	content: '';
+	width: 322px;
+	height: 713px;
+	top: -85px;
+	left: -243px;
+	border-radius: 0 0 57vh 57vh;
+	background: linear-gradient(
+		to top,
+		var(--Light-Violet),
+		var(--Light-Magenta)
+	);
+	z-index: -1;
+}
+
+.info::after {
+	position: absolute;
+	content: '';
+	background: rgb(236, 236, 236);
+	border-radius: 57vh 0 0 0;
+	z-index: -1;
+	width: 0;
+	height: 0;
+}
+
+/* media query */
+
+@media (min-width: 1000px) {
+	.main {
+		max-width: 1440px;
+		flex-direction: row;
+		gap: 6em;
+		justify-content: space-around;
+		align-items: center;
+		padding: 4em;
+	}
+
+	.info {
+		text-align: left;
+	}
+
+	.info-subtitle {
+		max-width: 45ch;
+	}
+
+	.info::after {
+		width: 326px;
+		height: 641px;
+		bottom: -256px;
+		right: 0px;
+	}
 }
